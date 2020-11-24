@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<style>
+
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+    <div class="hero">
+
+        <div class="content">
+            <small>Welcome countryshop</small>
+            <h1>country hardware</h1>
+        </div>
+        <div class="side-bar">
+            <img src="static/images/logo.jpg" class="menu">
+            <img src="static/images/twitter1.jpg" class="menu">
+        </div>
+        <div class="bubus">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+            <img src="static/images/logo.jpg">
+        </div>
+    </div>
+
+    <form action="/login" method="post"><!----- changed methode and index ---->
+        <div  class ="login-form">
+            <h1 id="logi">login here</h1>
+            <label for="pin">Username:</label><br>
+            <input type="text" autocomplete="off" autofocus name="name" id="login name" id="ree" name="name" placeholder="UserName" required>
+            <label for="pin">User email:</label><br>
+            <input type="email" autocomplete="off" autofocus name="name" id="login email" id="ree" name="email" placeholder="Email Adress" required>
+            <label for="pin">User password:</label><br>
+            <input type="password" autocomplete="off" autofocus name="name" name="" id="login password" id="ree" placeholder="Password" required><br>
+
+            <input id="login-btnn" type="submit" value="login" style="cursor: pointer;">
+        </div>
+
+
+    </form>
+
+
+
+
+
+
+{% endblock %}

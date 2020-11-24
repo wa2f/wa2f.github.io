@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+<title>contacts</title>
+{% block body %}
+
+
+    <div class="links">
+        <a href="{{ url_for('index') }}">home</a>
+        <a href="{{ url_for('work') }}">work</a>
+        <a href="{{ url_for('product') }}">products</a>
+        <a href="{{ url_for('task') }}">todos for the day</a>
+        <a href="{{ url_for('register') }}">Add a new person</a>
+        <a href="{{ url_for('contacts') }}">Add a contact</a>
+        <a href="{{ url_for('logout') }}">logout</a>
+    </div>
+
+    <h1>contacts</h1>
+    <ul>
+        {% for row in rows %}
+            <li>{{ row["name"] }} ({{ row["email"] }}) ({{ row["phone"] }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('contacts') }}">Add a new person</a>
+
+
+
+{% endblock %}

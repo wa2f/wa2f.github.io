@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+    <div class="links">
+      <a href="{{ url_for('index') }}">home</a>
+        <a href="{{ url_for('work') }}">work</a>
+        <a href="{{ url_for('product') }}">products</a>
+        <a href="{{ url_for('task') }}">todos for the day</a>
+        <a href="{{ url_for('register') }}">Add a new person</a>
+        <a href="{{ url_for('contacts') }}">Add a contact</a>
+        <a href="{{ url_for('logout') }}">logout</a>
+    </div>
+
+    <form action="/add" method="post">
+      <div  class="header">
+        <input id="task-name" name="tasks" type="text" placeholder="Task name">
+        <input id="submit-task" type="submit" disabled>
+      </div>
+    </form>
+    <script>
+      document.querySelector('#task-name').onkeyup = function () {
+        if(document.querySelector('#task-name').value === '') {
+          document.querySelector('#submit-task').disabled = true;
+        }else {
+          document.querySelector('#submit-task').disabled = false;
+        }
+
+      }
+    </script>
+
+
+{% endblock %}

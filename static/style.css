@@ -1,0 +1,268 @@
+body {
+
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    font-family: Verdana,sans-serif;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-right:20px;
+    padding: 38px;
+    text-transform: uppercase;
+    background: linear-gradient(#00545d, #000729);
+}
+.hero {
+    background-image: url("/static/images/photo1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+.menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+
+}
+.bubus img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+
+}
+.bubus {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+
+        opacity: 1;
+    }
+    70%{
+
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+.bubus img:nth-child(1) {
+
+    animation-delay: 2s;
+    width: 25px;
+
+}
+
+.bubus img:nth-child(2) {
+    animation-delay: 1s;
+
+}
+.bubus img:nth-child(3) {
+    animation-delay: 3s;
+    width: 35px;
+
+}
+.bubus img:nth-child(4) {
+    animation-delay: 4.5s;
+
+}
+.bubus img:nth-child(5) {
+    animation-delay: 3s;
+    width: 30px;
+ }
+.bubus img:nth-child(7) {
+    animation-delay: 4s;
+
+
+}
+.bubus img:nth-child(8) {
+
+    animation-delay: 2.5s;
+    width: 28px;
+
+}
+
+#avater {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+
+
+
+}
+.login-form {
+    width: 300px;
+    position: absolute;
+    padding: 30px;
+    top: 40%;
+    left: 40%;
+    transform: tarnslate(-50%,-50%);
+    background-image: url("/static/images/loginp.jpg");
+    background-position: center;
+
+
+
+}
+#login-btnn {
+   border: 1px solid red;
+   background: pink;
+}
+#logi {
+    color: white;
+    font-weight: 700;
+}
+#ree {
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    width: 200;
+    outline: none;
+    color: white;
+    transition: 0.25px;
+}
+.table_product {
+    width: 300px;
+    border-collapse: collapse;
+}
+.th, td {
+    padding: 10px;
+
+}
+.table, th, td {
+
+    border: 1px solid black;
+}
+.caption {
+    caption-side: top;
+}
+.menu-bar {
+    background: green;
+    text-align: center;
+
+}
+#ul-menu-bar {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+
+}
+.menu-bar ul li {
+    width: 120px;
+    margin : 15;
+    padding: 15px;
+
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+
+}
+.sub-menu1 {
+    display: inline-flex;
+}
+.links .li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.login-mess{
+    text-align: center;
+    color: green;
+}
+
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-right:20px;
+  padding: 38px;
+  text-transform: uppercase;
+}
+
+/* Include the padding and border in an element's total width and height */
+
+
+
+
+
+
+.content {
+    text-align: center;
+    color: #555;
+}
+
+.todo-body {
+  margin: 10px auto;
+  min-width: 250px;
+  max-width: 50%;
+  background-color: silver;
+}
+#myUL {
+    margin: 0;
+    padding: 0;
+
+}
+.photos-layout {
+
+    position: absolute;
+
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+
+
+
+
+
+
+}
