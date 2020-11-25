@@ -40,3 +40,6 @@ ul li ul li {
 ul li:hover ul li {
     display: block;
 }
+#image_owner {
+    text-align: right;
+}
