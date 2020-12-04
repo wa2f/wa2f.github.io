@@ -1,5 +1,6 @@
 body {
     background-image: url(images/image27.jpg);
+    background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,4 +43,11 @@ ul li:hover ul li {
 }
 #image_owner {
     text-align: right;
+}
+.home_class {
+
+
+}
+.links {
+    background-position: fixed;
 }
